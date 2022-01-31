@@ -17,6 +17,29 @@ header {
   padding: 50px 0;
 }
 
+footer {
+  background-color: #5B44FB;
+  height: 200px;
+  width: 100%;
+}
+
+h4 {
+  text-align: center;
+  color: #FFFFFF;
+  font-family: 'Francois One', sans-serif;
+  font-size: 30px;
+  padding: 20px 0 0 0;
+}
+
+footer p {
+  text-align: center;
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #ffff;
+  padding: 20px 0;
+}
+
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -97,7 +120,7 @@ header {
 
 .boxCards {
   max-width: 1080px;
-  margin: 100px auto;
+  margin: 50px auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -105,37 +128,7 @@ header {
   flex-wrap: wrap;
 }
 
-footer {
-  background-color: #5B44FB;
-  height: auto;
-  width: 100%;
-}
 
-h4 {
-  text-align: center;
-  color: #FFFFFF;
-  font-family: 'Francois One', sans-serif;
-  font-size: 30px;
-  padding: 20px 0 0 0;
-}
-
-footer p {
-  text-align: center;
-  font-size: 16px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #ffff;
-  padding: 20px 0;
-}
-
-footer .feitoPor {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-  color: #C8C6C6;
-  gap: 10px;
-}
 
 @media only screen and (max-width: 787px) {
   .intro h2 {
