@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
+*, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Francois One', sans-serif;
+  color: #fff;
+  font-size: 50px;
+}
+
+header {
+  background-color: #5B44FB;
+  padding: 50px 0;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro h2 {
+  padding: 50px 0 30px 0;
+  font-family: 'Francois One', sans-serif;
+  color: #5B44FB;
+  font-size: 30px;
+}
+
+.intro p {
+  color: #585858;
+  font-family: 'Francois One', sans-serif;
+  font-size: 22px;
+  padding: 0 0 50px 0;
+}
+
+.intro span {
+  color: #5B44FB;
+  font-size: 22px;
+  font-family: 'Francois One', sans-serif;
+}
+
+.intro input {
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px #3c3c3c solid;
+  margin: 20px 0;
+  padding: 0px 10px;
+  text-align: center;
+  color: #3c3c3c;
+}
+
+.intro input::placeholder {
+  font-size: 14px;
+}
+
+.card {
+  background-color: #5B44FB;
+  color: #FFFFFF;
+  height: 120px;
+  padding: 30px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  text-decoration: none;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex: 0 1 250px;
+  margin: 20px;
+  transform: 1;
+}
+
+.card:hover {
+  padding: 40px;
+  transition: 1s;
+}
+
+.card h3 {
+  font-family: 'Francois One', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.6px;
+}
+
+.card p {
+  font-family: 'Francois One', sans-serif;
+  padding: 20px 0;
+  color: #FFFFFF;
+}
+
+.boxCards {
+  max-width: 1080px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer {
+  background-color: #5B44FB;
+  height: auto;
+  width: 100%;
+}
+
+h4 {
+  text-align: center;
+  color: #FFFFFF;
+  font-family: 'Francois One', sans-serif;
+  font-size: 30px;
+  padding: 20px 0 0 0;
+}
+
+footer p {
+  text-align: center;
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #ffff;
+  padding: 20px 0;
+}
+
+footer .feitoPor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  color: #C8C6C6;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 787px) {
+  .intro h2 {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 26px;
+    width: 300px;
+  }
+
+  .intro p {
+    text-align: center;
+    width: 200px;
+  }
+
+  .intro input {
+    width: 300px;
+  }
+}

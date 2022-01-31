@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcule Aki - Calculadora de  Porcentagem</title>
+  <meta name="description" content="Calcuke Aki - Calculadora do Porcentagem">
+  <meta property="og:description" content="Calcuke Aki - Calculadora de Porcentagem" />
+  <meta property="og:url" content="https://calculeaki.com.br/" />
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Calcuke Aki - Calculadora de Porcentagem" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section class="container">
+    <h1>Calculadora de Porcentagem</h1>
+    <div class="boxFormulario">
+      <form action="" class="formulario" id="formulario">
+        <label for="">Quanto é</label>
+        <input type="number" id="porcentagem" placeholder="%" required pattern="[0-9]+([,\.][0-9]+)?" step="any">
+        <label for="">De</label>
+        <input type="number" id="valor" placeholder="valor" required pattern="[0-9]+([,\.][0-9]+)?" step="any">
+        <input type="submit" value="Calcular" class="btn">
+      </form>
+      <div class="boxResultado">
+        <h2></h2>
+        <span></span>
+      </div>
+      <a href="index.html" class="btnVoltar">Voltar</a>
+    </div>
+    <a href="../index.html" class="btnIndex">Voltar para a Home</a>
+  </section>
+  <script src="js/script.js"></script>
+</body>
+</html>

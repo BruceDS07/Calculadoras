@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcule Aki - Calcule a Média de Consumo de Combustível</title>
+  <meta name="description" content="Calcuke Aki - Calculadora da Média de Consumo de Combustível">
+  <meta property="og:description" content="Calcuke Aki - Calculadora da Média de Consumo de Combustível" />
+  <meta property="og:url" content="https://calculeaki.com.br/" />
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Calcuke Aki - Calculadora da Média de Consumo de Combustível" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section class="container">
+    <h1>Calculadora da média <br> do consumo de combustível</h1>
+    <div class="boxFormulario">
+      <form action="" class="formulario" id="formulario">
+        <label for="">Qual o valor do combustível?</label>
+        <input type="number" id="valor" placeholder="Valor do combustível" required pattern="[0-9]+([,\.][0-9]+)?" step="any">
+        <label for="">Quantos R$ você abasteceu?</label>
+        <input type="number" id="valorAbastecido" placeholder="Valor abastecido" required pattern="[0-9]+([,\.][0-9]+)?" step="any">
+        <label for="">Qual a distância percorrida?</label>
+        <input type="number" id="quilometragem" placeholder="Distância percorrida (Kms)" pattern="[0-9]+([,\.][0-9]+)?" step="any" required>
+        <label for="">Selecione o tipo do veiculo</label>
+        <div class="containerIcons">
+          <div class="cardIcon">
+            <input type="image" class="iconIMG" value="moto" src="img/icone-moto.png">
+          </div>
+          <div class="cardIcon">
+            <input type="image" value="carro" src="img/icon.png" class="iconIMG2" alt="">
+          </div>
+        </div>
+        <!-- <input type="submit" class="btn" value="Calcular"> -->
+      </form>
+      <h2></h2>
+      <span></span>
+      <div class="boxResultado">
+        <h3></h3>
+        <p></p>
+      </div>
+      <a href="index.html" class="btnVoltar">Calcular novamente</a>
+    </div>
+    <a href="../index.html" class="btnIndex">Voltar para a Home</a>
+  </section>
+  <script src="js/script.js"></script>
+</body>
+</html>
