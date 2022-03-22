@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #F7F6E7;
+}
+
+h1 {
+  font-family: 'Francois One', sans-serif;
+  text-align: center;
+  color: #5B44FB;
+  padding: 50px 0 30px 0;
+  font-size: 36px;
+}
+
+.container {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container>p {
+  color: #5B44FB;
+  font-size: 20px;
+  font-family: 'Francois One', sans-serif;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.boxFormulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #CCCCCC;
+  height: auto;
+  margin: 0 auto;
+  width: 50%;
+  padding: 2rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  gap: 50px;
+}
+
+.boxFormulario h2 {
+  font-family: 'Francois One', sans-serif;
+  text-align: center;
+  font-size: 34px;
+  color: #5B44FB;
+  margin-bottom: 15px;
+}
+
+.boxFormulario span {
+  font-family: 'Francois One', sans-serif;
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #3c3c3c;
+}
+
+.formulario {
+  width: 50%;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario>input {
+  height: 40px;
+  text-align: center;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Francois One', sans-serif;
+  font-size: 18px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Propriedade que altera o bg dos inputs */
+#letraMaiuscula,
+#letraMinuscula,
+#numeros,
+#caracteresEspeciais {
+  accent-color: #5B44FB;
+}
+
+#inputNumero {
+  text-align: center;
+  padding: 5px 0;
+}
+
+
+
+/* Botão para voltar para a home - Calcuke Aki */
+.btnIndex,
+.btnVoltar {
+  height: 60px;
+  width: 230px;
+  font-size: 24px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #5B44FB;
+  color: #fff;
+  transition: 1s;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 25px 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btnIndex {
+  margin-top: 100px;
+}
+
+.btnIndex:hover,
+.btnVoltar:hover {
+  border: 2.5px #3c3c3c solid;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: 1s;
+  color: #3c3c3c;
+}
+
+
+.inputs {
+  width: 40%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+  margin: 50px 0;
+  background-color: #CCCCCC;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.inputs>label {
+  font-size: 22px;
+}
+
+.inputs>div>.inputNumero {
+  width: 50px;
+  margin: 20px 0;
+}
+
+.boxNumero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="checkbox"] {
+  height: 30px;
+  width: 30px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  color: #5B44FB;
+  width: 200px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #5B44FB;
+  width: 20px;
+  border-radius: 10px;
+  height: 20px;
+}
+
+.inputsResponsive {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 150px !important;
+  padding: 0 50px;
+}
+
+
+
+/* Estilo para Smartphone */
+@media only screen and (max-width: 768px) {
+
+  .container {
+    justify-content: flex-start;
+    height: auto;
+  }
+
+  h1 {
+    padding: 40px 0;
+  }
+
+  .boxFormulario {
+    width: 90%;
+    height: 300px;
+    padding: 30px 0 30px 0;
+  }
+
+  .formulario {
+    width: 90%;
+  }
+
+  .boxFormulario h2 {
+    font-size: 24px;
+    width: 90%;
+  }
+
+  .boxFormulario .btnVoltar {
+    width: 80%;
+  }
+
+  .boxFormulario label {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .boxFormulario input {
+    width: 90%;
+  }
+
+  .boxFormulario {
+    height: auto;
+  }
+
+  .boxResultado {
+    padding: 15px;
+    width: 85%;
+    font-size: 18px;
+  }
+
+  .btnIndex {
+    width: 80%;
+  }
+
+  .inputs {
+    width: 78%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .inputsResponsive {
+    min-width: 50px !important;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .inputsResponsive .boxNumero {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+}

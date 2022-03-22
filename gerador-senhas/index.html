@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcule Aki - Gerador de Senhas</title>
+  <meta name="description" content="Calcule Aki - Calculadora do Raio do Círculo">
+  <meta property="og:description" content="Calcule Aki - Calculadora do Raio do Círculo" />
+  <meta property="og:url" content="https://calculeaki.com.br/" />
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Calcule Aki - Calculadora do Raio do Círculo" />
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ELTMPWC9S4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ELTMPWC9S4');
+</script>
+</head>
+
+<body>
+  <section class="container">
+    <h1>Gere senhas seguras</h1>
+    <p>Use o Gerador de senhas para obter senhas fortes e seguras</p>
+    <div class="boxFormulario">
+      <form action="" class="formulario" id="formulario">
+        <input type="text" id="senhaGerada" placeholder="" not-required>
+    </div>
+    <div class="inputs">
+      <div class="inputsResponsive">
+        <input type="checkbox" id="letraMaiuscula" class="identificador" value="ABCDEFGHIJKLMNOPQRSTUVWXYZÇ">
+        <label for="letraMaiuscula">Letra Maiúscula</label>
+      </div>
+      <div class="inputsResponsive">
+        <input type="checkbox" id="letraMinuscula" class="identificador" value="abcdefghijklmnopqrstuvwxyzç">
+        <label for="letraMinuscula">Letra Minúscula</label>
+      </div>
+      <div class="inputsResponsive">
+        <input type="checkbox" id="numeros" class="identificador" value="1234567890">
+        <label for="numeros">Números</label>
+      </div>
+      <div class="inputsResponsive">
+        <input type="checkbox" id="caracteresEspeciais" class="identificador" value="!@#$%&*()_+-=.][{}^~]">
+        <label for="caracteres">Caracteres Especiais</label>
+      </div>
+      <div class="inputsResponsive">
+        <div class="boxNumero">
+          <input type="range" min="1" max="20" id="rangeSenha" >
+          <input type="number" max="20" min="1" id="inputNumero">
+          <label for="numerosCaracteres">Tamanho da Senha</label>
+        </div>
+      </div>
+    </div>
+    <input type="submit" class="btnVoltar" value="Gerar Senha" id="btnGerarSenha">
+    <a href="../index.html" class="btnIndex">Voltar para a Home</a>
+  </form>
+  </section>
+
+  <script src="js/script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-XXXX-Y', 'auto');
+  ga('send', 'pageview');
+  
+  </script>
+  <!-- End Google Analytics -->
+</body>
+</html>
