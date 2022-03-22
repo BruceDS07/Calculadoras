@@ -66,13 +66,13 @@ btnGerarSenha.addEventListener('click', (e) => {
 })
 
 /* Evento de click no input Range para determinar o tamanho de caracteres da senha */
-inputRange.addEventListener('click', (e) => {
+inputRange.addEventListener('change', (e) => {
   let inputNumerosRange = document.getElementById('inputNumero');
   inputNumerosRange.value = inputRange.value;
   e.preventDefault();
 
   /* Outro evento de click, para caso o usuário mudar o tamanho da senha, ele mudar também */
-  inputNumerosRange.addEventListener('click', () => {
+  inputNumerosRange.addEventListener('change', () => {
     inputRange.value = inputNumerosRange.value;
     e.preventDefault();
   })
