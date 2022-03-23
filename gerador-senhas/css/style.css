@@ -14,17 +14,18 @@ h1 {
   font-family: 'Francois One', sans-serif;
   text-align: center;
   color: #5B44FB;
-  padding: 50px 0 30px 0;
+  padding: 50px 40px;
   font-size: 36px;
 }
 
 .container {
+  overflow-x: hidden;
   height: auto;
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -101,8 +102,6 @@ h1 {
   padding: 5px 0;
 }
 
-
-
 /* Botão para voltar para a home - Calcuke Aki */
 .btnIndex,
 .btnVoltar {
@@ -145,14 +144,14 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 50px;
+  flex-wrap: wrap;
   margin: 50px 0;
+  padding: 25px 0;
+  gap: 50px;
   background-color: #CCCCCC;
-  padding: 50px 0;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   text-align: center;
-  flex-wrap: wrap;
 }
 
 .inputs>label {
@@ -199,11 +198,15 @@ input[type="range"]::-webkit-slider-thumb {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  width: 150px !important;
+  width: 50px !important;
   padding: 0 50px;
+  flex: 1 0 150px;
 }
 
-
+.inputsResponsive:nth-child(5) {
+  flex: 1 0 600px;
+  flex-wrap: wrap;
+}
 
 /* Estilo para Smartphone */
 @media only screen and (max-width: 768px) {
@@ -266,12 +269,14 @@ input[type="range"]::-webkit-slider-thumb {
     align-items: center;
     margin: 50px auto;
     height: auto;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
+    flex: 1 0 100px;
   }
 
   .inputsResponsive {
     min-width: 50px !important;
+    max-width: 50px !important;
     height: auto;
     flex-wrap: wrap;
     justify-content: center;
@@ -279,11 +284,32 @@ input[type="range"]::-webkit-slider-thumb {
     margin: 0 auto;
   }
 
+  .inputsResponsive:nth-child(5) {
+    padding: 0 200px;
+  }
+
   .inputsResponsive .boxNumero {
     width: 100%;
     margin: auto;
     justify-content: center;
     align-items: center;
+    clear: both;
+  }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+  .inputs {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+
+  .inputsResponsive {
+    max-width: 50px;
+    min-width: 50px;
+    padding: 0 40px;
+    flex-wrap: wrap;
   }
 
 }
