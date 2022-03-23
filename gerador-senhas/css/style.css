@@ -44,13 +44,11 @@ h1 {
   align-items: center;
   background-color: #CCCCCC;
   height: auto;
-  margin: 0 auto;
-  width: 50%;
-  padding: 2rem;
+  margin: 0 0 50px 0;
+  width: 600px;
   border: none;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  gap: 50px;
 }
 
 .boxFormulario h2 {
@@ -124,7 +122,8 @@ h1 {
 }
 
 .btnIndex {
-  margin-top: 100px;
+  margin-top: 50px;
+  width: 230px !important;
 }
 
 .btnIndex:hover,
@@ -138,14 +137,14 @@ h1 {
 
 
 .inputs {
-  width: 40%;
+  width: 600px;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 50px 0;
+  margin: 0 0 50px 0;
   padding: 25px 0;
   gap: 50px;
   background-color: #CCCCCC;
@@ -198,7 +197,7 @@ input[type="range"]::-webkit-slider-thumb {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  width: 50px !important;
+  min-width: 150px;
   padding: 0 50px;
   flex: 1 0 150px;
 }
@@ -250,6 +249,7 @@ input[type="range"]::-webkit-slider-thumb {
 
   .boxFormulario {
     height: auto;
+    width: 600px;
   }
 
   .boxResultado {
@@ -259,11 +259,12 @@ input[type="range"]::-webkit-slider-thumb {
   }
 
   .btnIndex {
-    width: 80%;
+    width: 230px
   }
 
   .inputs {
-    width: 78%;
+    width: 600px;
+    height: auto;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -275,7 +276,7 @@ input[type="range"]::-webkit-slider-thumb {
   }
 
   .inputsResponsive {
-    min-width: 50px !important;
+    min-width: 100px !important;
     max-width: 50px !important;
     height: auto;
     flex-wrap: wrap;
@@ -306,10 +307,17 @@ input[type="range"]::-webkit-slider-thumb {
   }
 
   .inputsResponsive {
-    max-width: 50px;
-    min-width: 50px;
+    max-width: 50px !important;
+    min-width: 50px !important;
     padding: 0 40px;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .boxFormulario {
+    width: 300px;
   }
 
 }
