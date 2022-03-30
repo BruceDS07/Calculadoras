@@ -24,7 +24,7 @@ function geradorSenha(tamanhosenha, chars) {
 }
 
 /* Eventos nos inputs, para togglar a classe ativo
-Que será usada como condicional na próxima função para add os valores desejados para irão gerar a senha */
+Que será usada como condicional na próxima função para add os valores desejados que irão gerar a senha */
 inputLetrasMaiusculas.addEventListener('click', () => {
   inputLetrasMaiusculas.classList.toggle('ativo');
 })
@@ -54,18 +54,26 @@ Caso a array possua o valor e o item NÃO possua a classe 'ativo' ele retira o v
 btnGerarSenha.addEventListener('click', (e) => {
   let identificador = document.querySelectorAll('.identificador');
   identificador.forEach((item) => {
+    /* Se o identificador possuir a classe ativo e não tiver dentro da array ja */
     if(item.classList.contains('ativo') && (!arraySenha.includes(item.value))) {
+      /* Ele add o elemento ao arraySenha */
       arraySenha.push(item.value);
+      /* Se o identificador já estiver no array e não tiver a classe ativo, ele remove o item do array */
     } else if (arraySenha.includes(item.value) && !item.classList.contains('ativo'))  {
       arraySenha.splice(arraySenha[item.value]);
     }
   })
+
+  /* a variável chars irá armazenar os caracteres escolhidos nas opções (maius,minus,num,esp), irá juntálos e transformálos em string */
   chars = arraySenha.join('').toString();
+
+  /* O input que irá conter a senha que foi gerada, irá chamar a função geradorSenha 
+  Com os atributos (tamanhosenha e chars) e irá gerar a senha */
   senhaGerada.value = geradorSenha(inputNumerosRange.value, chars);
   e.preventDefault();
 })
 
-/* Evento de click no input Range para determinar o tamanho de caracteres da senha */
+/* Evento de change no input Range para determinar o tamanho de caracteres da senha */
 inputRange.addEventListener('change', (e) => {
   let inputNumerosRange = document.getElementById('inputNumero');
   inputNumerosRange.value = inputRange.value;
