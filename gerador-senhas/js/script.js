@@ -79,3 +79,20 @@ inputRange.addEventListener('change', (e) => {
 
   return (inputNumerosRange.value);
 })
+
+
+/* Função para copiar a senha para o ClipBoard */
+
+/* Seletor */
+let botaoCopiar = document.getElementById('botao-copiar');
+
+/* Evento de click no botão 'Copiar Senha' */
+botaoCopiar.addEventListener('click', (e) => {
+
+    /* Ao clicar no 'Copiar Senha' ele irá copiar o valor presente no campo 'senhaGerada'
+    que é aonde se encontra a senha que foi gerada */
+    navigator.clipboard.writeText(senhaGerada.value);
+
+    /* Previne o comportamento padrão da página, que seria recarregar a mesma */
+    e.preventDefault();
+  })

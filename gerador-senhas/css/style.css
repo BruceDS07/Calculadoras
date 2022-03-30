@@ -68,12 +68,14 @@ h1 {
 
 .formulario {
   width: 50%;
-  height: 100px;
+  height: auto;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+  padding: 25px 0;
 }
 
 .formulario>input {
@@ -116,9 +118,29 @@ h1 {
   transition: 1s;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 10px 0 50px 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btnCopiar {
+  height: 40px;
+  width: auto;
+  font-size: 24px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #5B44FB;
+  color: #fff;
+  transition: 1s;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin: 25px 0;
   text-decoration: none;
   text-align: center;
+  padding: 0 20px;
 }
 
 .btnIndex {
@@ -127,7 +149,8 @@ h1 {
 }
 
 .btnIndex:hover,
-.btnVoltar:hover {
+.btnVoltar:hover,
+.btnCopiar:hover {
   border: 2.5px #3c3c3c solid;
   background-color: transparent;
   border-radius: 5px;
