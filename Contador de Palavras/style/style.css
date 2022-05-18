@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F7F6E7;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Francois One', sans-serif;
+    color: #5B44FA;
+    letter-spacing: 1px;
+    font-size: 32px;
+}
+
+h2 {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContagem form {
+    width: 100%;
+    margin: 50px 0;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContagem label {
+    font-family: 'Francois One', sans-serif;
+    color: #3c3c3c;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.formContagem .textArea {
+    width: 500px;
+    height: 500px;
+    border-radius: 5px;
+    border: 1px solid #c3c3c3;
+    background-color: #CCCCCC;
+    box-shadow:  rgb(0 0 0 / 35%) 0px 5px 15px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    resize: none;
+    border: none;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    background-color: #5B44FA;
+    color: #fff;
+    margin: 25px 0;
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+    transition: .5s;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    transform: .5s;
+    background-color: transparent;
+    color: #3c3c3c;
+    border: 2px solid #3c3c3c;
+    cursor: pointer;
+}
+
+.divResultado {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    border: none;
+    border-radius: 3px;
+    background-color: #5B44FA;
+    font-family: 'Francois One', sans-serif;
+
+}
+
+.tituloResultado {
+    font-family: 'Francois One', sans-serif;
+    font-size: 26px;
+    color: #5B44FA;
+    text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .formContagem .textArea {
+        width: 300px;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    
+        .formContagem .textArea {
+            width: 200px;
+            height: 200px;
+        }
+
+}
